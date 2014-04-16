@@ -209,6 +209,14 @@ $.validity = {
         return !!this.report;
     },
 
+    //If the form is submitting due to a successfull validation reports true
+    isSubmitting: function() {
+        return this.submitting;
+    },
+
+    //true when the form is submitting
+    submitting: false,
+
     // Function to prepare validity to start validating:
     start:function() {
 
